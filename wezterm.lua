@@ -4,8 +4,6 @@ local config = {}
 -- Cross-platform default shell
 if wezterm.target_triple:match("windows") then
     config.default_prog = { "C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-NoLogo" }
-else
-    config.default_prog = { "/bin/zsh" } 
 end
 
 -- Appearance
